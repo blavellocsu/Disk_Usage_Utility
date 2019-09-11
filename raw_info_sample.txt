@@ -1,0 +1,27 @@
+Controller Name           System ID     Serial Number     Model    Status      
+------------------------- ------------- ----------------- -------- ----------- 
+EnterpriseStore1          124578383     965321000632      FAS8200  ok
+EnterpriseStore2          124578490     965321000631      FAS8200  ok
+2 entries were displayed.
+
+Filesystem               total       used      avail capacity  Mounted on                 Vserver
+/vol/vol0/           3015680MB    34955MB  2980724MB       1%  ---                        es01-01
+/vol/vol0/.snapshot   158720MB     6207MB   152512MB       4%  ---                        es01-01
+/vol/vol0/            430398MB    34985MB   395413MB       8%  ---                        es01-02
+/vol/vol0/.snapshot    22652MB     1383MB    21269MB       6%  ---                        es01-02
+/vol/svm_dc_inf_sata_root/ 972MB      3MB      969MB       0%  /                          svm_dc-inf_sata
+/vol/svm_dc_inf_sata_root/.snapshot 51MB 8MB    42MB      17%  //.snapshot                svm_dc-inf_sata
+/vol/vfiler_DC_INF2_cifs_01/ 1887436MB 1554856MB 332580MB 82%  /vfiler_DC_INF2_cifs_01    svm_dc-inf_sata
+/vol/vfiler_DC_INF2_cifs_01/.snapshot 0MB 621MB  0MB       0%  /vfiler_DC_INF2_cifs_01/.snapshot  svm_dc-inf_sata
+/vol/SVM_Fiber_BAKUP_root/ 972MB      2MB      970MB       0%  /                          svm_fiber_backup
+/vol/SVM_Fiber_BAKUP_root/.snapshot 51MB 4MB    46MB       9%  //.snapshot                svm_fiber_backup
+/vol/prod1_nfs_01/   7340032MB  2027160MB  5312871MB      28%  /prod1_nfs_01              svm_sas
+/vol/prod1_nfs_01/.snapshot 0MB  518339MB        0MB       0%  /prod1_nfs_01/.snapshot    svm_sas
+/vol/svm_sas_root/       972MB        3MB      969MB       0%  /                          svm_sas
+/vol/svm_sas_root/.snapshot 51MB      8MB       42MB      17%  //.snapshot                svm_sas
+/vol/vfiler_PROD1_Moodle_Ful_01/ 512000MB 144337MB 367662MB 28%  /vfiler_PROD1_Moodle_Ful_01  svm_sas
+/vol/vfiler_PROD1_Moodle_Ful_01/.snapshot 0MB 136775MB 0MB 0%  /vfiler_PROD1_Moodle_Ful_01/.snapshot  svm_sas
+/vol/vfiler_PROD1_Moodle_LA_01/ 155648MB 44251MB 111396MB 28%  /vfiler_PROD1_Moodle_LA_01  svm_sas
+/vol/vfiler_VCL2_nfs_01/.snapshot 0MB 156MB      0MB       0%  /vfiler_VCL2_nfs_01/.snapshot  svm_vcl_sata
+18 entries were displayed.
+
