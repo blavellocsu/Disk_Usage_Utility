@@ -27,13 +27,13 @@ An example of the script running with multiple keywords:
 This command filters data containing the words `snapshot` and `filer`, and it sorts the `raw_info_sample.txt` data from highest to lowest.
 
 
-I used "use warnings" and "use strict" to avoid mistakes in the code. 
+'use warnings' and 'use strict' is used to avoid mistakes in the code. 
 
-## SUBROUTINE
+### SUBROUTINE
 I defined the use of a subroutine printCSV at the beginning of the program to print the results to a CSV file.
 
 
-## VARIABLES
+### VARIABLES
 `my @file` - an array that holds in the values of each word read in as elements.
 `my @keywords` - an array that holds in the values of each of the keywords input as parameters by the user.
 `my @controllerLines`, `@controllerArray`, and `$controllerCount` all handle the controller information in the file.
@@ -44,18 +44,18 @@ I defined the use of a subroutine printCSV at the beginning of the program to pr
 `[\/\._a-zA-Z0-9]+\s+([0-9]+[KkMmGgTtPp]?[Bb]\s+){3}[0-9]{1,2}%\s+[\_\-\/\.a-zA-Z0-9]+\s+[\_\-\/\.a-zA-Z0-9]+` ensures the filesystem is filtered correctly.
 `my $filename` holds the filename variable that was read in as a parameter from the user.
 
-## CAPTURE PARAMETERS
+### CAPTURE PARAMETERS
 
-The first step I took was capturing the `@ARGV` from the user.  I set the first one equal to `$filename` and the following equal to `$keywords`.  
+To capture the `@ARGV` from the user, first one is set to `$filename` and the following to `$keywords`.  
 ```bash
 ($filename, @keywords) = @ARGV;
 ```
 
-Then, I created an if statement to catch if the filename was not entered as a parameter.
+Then, an if statement catches if the filename was not entered as a parameter.
 This outputs correct usage to the user and exits the program with exit;.
 
 
-## OPEN FILE
+### OPEN FILE
 
 The fileheader opens with `$fh`.
 A while loop reads through the file line by line by setting the `$fh` to the scalar value of `$line`.
@@ -70,7 +70,7 @@ The scalar controller and filesystem lines are split into arrays using the split
 Each elements of the @controllerArray and @filesystem arrays are assigned to these values.
 
 
-## SORT ARRAY
+### SORT ARRAY
 
 The percent sign causes issues when sorting.  To deal with this, the % is removed from the list of capacities.
 This was done with a foreach loop that uses substitution with regex (similar to substitute in vi) to remove the % from element [4] of the variable.
@@ -78,11 +78,11 @@ Then, the array is populated with the removed % values.
 The @sorted array holds the sorted values, and is set equal to sort command to get the sorted values by element [4](fifth column) of the filesystemArray. This places the data into a descending order by % used in the sorted array.
 
 
-## CSV OUTPUT 
+### CSV OUTPUT 
 An outputFile is created that has the name of the original $filename, plus "_sorted.csv".
 
 
-## CLOSE FILE 
+### CLOSE FILE 
 Fileheader is closed with close(FH);.
 
 
